@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Wikipedia Multi-Language Support",
+    "description": "View Wikipedia articles in your preferred language alongside the original content.",
+    "version": "1.0",
+    "icons": {
+        "48": "imgs/photo.png"
+      },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://en.wikipedia.org/*"],
+        "js": ["js/script.js"]
+      }
+    ],
+    "permissions": [
+      "activeTab"
+    ]
+  }
+  
